@@ -9,13 +9,12 @@ h3 {
 }
 
 .navis a {
-    float: left;
     display: flex;
     color: #FFF8E8;
     text-align: center;
     padding: 0.5rem 0.8rem;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 
 .navis a:hover {
@@ -52,12 +51,22 @@ footer {
 }
 
 @media only screen and (max-width: 599px) {
+    #navigation {
+        display:flex; 
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .navbutt {
+        max-width: 800%;
+        margin: auto;
+    }
+    
     .navis a:not(:first-child) {
         display: none;
     }
 
     .navis a.navdrop {
-        float: right;
         display: flex;
     }
     
@@ -71,7 +80,6 @@ footer {
         top: 0;
     }
     .navis.responsive a {
-        float: none;
         display: flex;
         text-align: left;
     }
@@ -141,13 +149,12 @@ footer {
     }
 }
 
-@media only screen and (min-width: 600px) {
+/* @media only screen and (min-width: 600px) {
     .navis a:not(:first-child) {
         display: none;
     }
 
     .navis a.navdrop {
-        float: right;
         display: flex;
     }
     
@@ -161,7 +168,6 @@ footer {
         top: 0;
     }
     .navis.responsive a {
-        float: none;
         display: flex;
         text-align: left;
     }
@@ -229,7 +235,7 @@ footer {
         margin-right: 0.5rem;
         margin-top: 0.5rem;
     }
-}
+} */
 
 @media only screen and (min-width: 768px) {
     
