@@ -1,19 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Literally Portofolio</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" async></script>
 </head>
+
 <body>
     <!-- header -->
     <header>
-        <nav>
-            <a href="">Work</a>
-            <a href="">Education</a>
-            <a href="">Organization</a>
-            <a href="">Other</a>
+        <nav id="navigation" class="navis">
+            <a href="#profile-pic">About</a>
+            <a href="#work">Work</a>
+            <a href="#education">Education</a>
+            <a href="#organization">Organization</a>
+            <a href="#other">Other</a>
+            <a href="javascript:void(0);" class="navdrop" onclick="myFunction()">
+                <i>…</i>
+            </a>
         </nav>
     </header>
 
@@ -24,7 +31,9 @@
             <img id="profile-pic" src="assets/profile-pic.png">
             <br>
             <i><b>About Me</b></i>
-            <p>Electrical engineering student with interests in business and digital product. Experienced in IoTs, microcontrollers, robotics, instrumentations, secure data transfer, and web development. Led and participated various team-project and volunteer.</p>
+            <p>Electrical engineering student with interests in business and digital product. Experienced in IoTs,
+                microcontrollers, robotics, instrumentations, secure data transfer, and web development. Led and
+                participated various team-project and volunteer.</p>
             <br>
             <img id="obama-oil" src="assets/obama-oil.png">
             <br>
@@ -41,13 +50,13 @@
             <img id="obama-medal" src="assets/obama-medal.png">
             <br>
             <i>"Digistar" Golden Ticket Awarding</i>
-            
+
         </aside>
-        
+
         <!-- contents -->
         <div id="content">
             <hr>
-            <article class="article-1">
+            <article id="work" class="article-1">
                 <h1>
                     Work Experiences
                 </h1>
@@ -69,24 +78,26 @@
 
             <hr>
 
-            <article class="article-2">
+            <article id="education" class="article-2">
                 <h1>
                     Education Level
                 </h1>
                 <h3>Institut Teknologi Bandung</h3>
                 <i>Undergraduate, Electronic and Computer Engineering</i>
                 <ul>
-                    <li>Developed remotely-controlled interface for Feedback Instrument's Process Instrumentation Trainer 38-025</li>
+                    <li>Developed remotely-controlled interface for Feedback Instrument's Process Instrumentation
+                        Trainer 38-025</li>
                     <li>Developed register-level digital clock in ATMega328p chip Arduino</li>
                     <li>Developed human-arm controlled mechanical-arm using 9-axis IMU sensor</li>
-                    <li>Developed IoT implementation of GIFT-COFB lightweight cryptography in ESP32 using MQTT protocol</li>
+                    <li>Developed IoT implementation of GIFT-COFB lightweight cryptography in ESP32 using MQTT protocol
+                    </li>
                     <li>Developed implementation of TinyJAMBU lightweight cryptography in Altera FPGA using Python</li>
                 </ul>
             </article>
 
             <hr>
 
-            <article class="article-3">
+            <article id="organization" class="article-3">
                 <h1>
                     Organizational Experiences
                 </h1>
@@ -97,14 +108,16 @@
                     <li>Maintaining workshophme.com as business website</li>
                     <li>Built line-follower robot as internship project</li>
                 </ul>
-                
+
                 <h3>Divkom HME ITB</h3>
                 <i>Chairman</i>
                 <ul>
                     <li>Providing IT services for external clients</li>
                     <li>Led hme.itb.ac.id management for HME ITB's organizational website</li>
-                    <li>Developed simplified "capture the flag" project as part of HME ITB's sophomore student orientation</li>
-                    <li>To-lead crews consists of 30+ people focused on software engineering bootcamp, external competitions, and freelance projects</li>
+                    <li>Developed simplified "capture the flag" project as part of HME ITB's sophomore student
+                        orientation</li>
+                    <li>To-lead crews consists of 30+ people focused on software engineering bootcamp, external
+                        competitions, and freelance projects</li>
                 </ul>
 
                 <h3>Himpunan Mahasiswa Elektroteknik ITB (HME ITB)</h3>
@@ -130,7 +143,7 @@
 
             <hr>
 
-            <article class="article-3">
+            <article id="other" class="article-3">
                 <h1>
                     Skill, Achievements, and Others
                 </h1>
@@ -141,19 +154,22 @@
             </article>
         </div>
 
-        
+
     </main>
 
     <!-- footer -->
     <footer>
         <div class="disclaimer">
-            Taufiq Hidayat's Dicoding course final submission. Contents are experiemental. All resources belong to their rightful owner.
+            Taufiq Hidayat's Dicoding course final submission. Contents are experiemental. All resources belong to their
+            rightful owner.
         </div>
         <div class="socmed">
-            <span><a href="https://www.linkedin.com/in/taufiqhidayat1/"><img class="logo-socmed" src="assets/logo-in.png"></a></span>
+            <span><a href="https://www.linkedin.com/in/taufiqhidayat1/"><img class="logo-socmed"
+                        src="assets/logo-in.png"></a></span>
             <span><img class="logo-socmed" src="assets/logo-ig.png"></span>
             <span><img class="logo-socmed" src="assets/logo-wa.png"></span>
         </div>
     </footer>
 </body>
+
 </html>

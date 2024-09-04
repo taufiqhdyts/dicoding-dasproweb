@@ -1,14 +1,43 @@
 html {
     background-color: #F7EED3;
     color: #674636;
+    scroll-behavior: smooth;
 }
 
 h3 {
     font-style: italic
 }
 
-header{
+.navis a {
+    float: left;
+    display: flex;
+    color: #FFF8E8;
+    text-align: center;
+    padding: 0.5rem 0.8rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.navis a:hover {
+    background-color: #F7EED3;
+    color: #674636;
+}
+
+.navis .navdrop {
+    display: none;
+    color: #674636;
+    background-color: #AAB396;
+}
+
+.navis .navdrop:hover {
+    color: #674636;
+    background-color: #F7EED3;
+}
+
+header {
     padding: 0.3rem;
+    background-color: #674636;
+    overflow: hidden;
 }
 
 main {
@@ -22,8 +51,31 @@ footer {
     text-align: center;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 599px) {
+    .navis a:not(:first-child) {
+        display: none;
+    }
 
+    .navis a.navdrop {
+        float: right;
+        display: flex;
+    }
+    
+    .navis.responsive {
+        position: relative;
+    }
+
+    .navis.responsive a.navdrop {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .navis.responsive a {
+        float: none;
+        display: flex;
+        text-align: left;
+    }
+    
     .flex-container {
         display: flex;
         justify-content: space-evenly;
@@ -90,7 +142,93 @@ footer {
 }
 
 @media only screen and (min-width: 600px) {
+    .navis a:not(:first-child) {
+        display: none;
+    }
+
+    .navis a.navdrop {
+        float: right;
+        display: flex;
+    }
     
+    .navis.responsive {
+        position: relative;
+    }
+
+    .navis.responsive a.navdrop {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .navis.responsive a {
+        float: none;
+        display: flex;
+        text-align: left;
+    }
+    
+    .flex-container {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+    
+    #content {
+        padding: 1rem;
+        padding-top: 0rem;
+        background-color: #FFF8E8;
+    }
+    
+    aside {
+        flex-direction: column;
+        justify-items: center;
+        display: flex;
+        align-items: center;
+        text-align: justify;
+        padding: 1rem;
+        background-color: #FFF8E8;
+    }
+    
+    #profile-pic {
+        width: 10rem;
+        border-radius: 50%;
+    }
+    
+    #obama-tech {
+        width: 10rem;
+        border-radius: 5%;
+    }
+    
+    #obama-oil {
+        width: 10rem;
+        border-radius: 5%;
+    }
+    
+    #hackerman {
+        width: 10rem;
+        border-radius: 5%;
+    }
+    
+    #obama-medal {
+        width: 10rem;
+        border-radius: 5%;
+    }
+    
+    .disclaimer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .socmed {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .logo-socmed {
+        width: 2rem;
+        margin-right: 0.5rem;
+        margin-top: 0.5rem;
+    }
 }
 
 @media only screen and (min-width: 768px) {
