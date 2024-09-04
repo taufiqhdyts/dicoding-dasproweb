@@ -12,9 +12,9 @@ h3 {
     display: flex;
     color: #FFF8E8;
     text-align: center;
-    padding: 0.5rem 0.8rem;
+    padding: 0.5rem 1.5rem;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 .navis a:hover {
@@ -57,11 +57,6 @@ footer {
         justify-content: space-between;
     }
     
-    .navbutt {
-        max-width: 800%;
-        margin: auto;
-    }
-    
     .navis a:not(:first-child) {
         display: none;
     }
@@ -104,6 +99,10 @@ footer {
         text-align: justify;
         padding: 1rem;
         background-color: #FFF8E8;
+    }
+
+    .about-text {
+        padding-inline: 1rem;
     }
     
     #profile-pic {
@@ -149,27 +148,17 @@ footer {
     }
 }
 
-/* @media only screen and (min-width: 600px) {
-    .navis a:not(:first-child) {
-        display: none;
-    }
-
-    .navis a.navdrop {
-        display: flex;
+@media only screen and (min-width: 600px) {
+    #navigation {
+        display:flex; 
+        flex-direction: row;
+        justify-content: space-between;
     }
     
-    .navis.responsive {
-        position: relative;
-    }
-
-    .navis.responsive a.navdrop {
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-    .navis.responsive a {
+    .navis {
         display: flex;
-        text-align: left;
+        flex-direction: row;
+        justify-content: space-around;
     }
     
     .flex-container {
@@ -192,6 +181,10 @@ footer {
         text-align: justify;
         padding: 1rem;
         background-color: #FFF8E8;
+    }
+    
+    .about-text {
+        padding-inline: 1rem;
     }
     
     #profile-pic {
@@ -235,16 +228,33 @@ footer {
         margin-right: 0.5rem;
         margin-top: 0.5rem;
     }
-} */
-
-@media only screen and (min-width: 768px) {
-    
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 699px) {
+    #navigation {
+        display:flex; 
+        flex-direction: row;
+        justify-content: space-between;
+    }
     
-}
+    .flex-container{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
 
-@media only screen and (min-width: 1200px) {
+    aside {
+        max-width: 25%;
+        border: 1px solid #674636;
+        color: #674636;
+        text-align: center;
+    }
 
+    .about-text{
+        text-align: justify;
+        padding-inline: 0rem;
+    }
+    
+    .content-hr-top {
+        display: none;
+    }
 }
