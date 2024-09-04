@@ -48,6 +48,11 @@ main {
 footer {
     padding: 0.3rem;
     text-align: center;
+    color:#FFF8E8;
+    background-color: #674636;
+    padding-top: 1rem;;
+    padding-bottom: 1rem;
+    padding-inline: 2rem;
 }
 
 @media only screen and (max-width: 599px) {
@@ -138,13 +143,11 @@ footer {
 
     .socmed {
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
     }
-    
+
     .logo-socmed {
-        width: 2rem;
-        margin-right: 0.5rem;
-        margin-top: 0.5rem;
+        width: 200%;
     }
 }
 
